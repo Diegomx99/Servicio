@@ -8,13 +8,13 @@ import { ActivosComponent } from './components/activos/activos.component';
 
 
 const app_routes : Routes =[
-    { path:'home',component: HomeComponent },
+    { path:'inicio',component: HomeComponent },
     { path:'qr',component: QrComponent },
     { path:'usuarios',component: UsuariosComponent},
     { path:'login',component: LoginComponent},
     { path:'propietarios',component: PropietariosComponent},
     { path:'activos',component: ActivosComponent},
-    { path:'**', pathMatch: 'full', redirectTo:'home'}
+    { path:'**', pathMatch: 'full', redirectTo:'inicio'}
 ]
 
 export const App_routing = RouterModule.forRoot(app_routes);
