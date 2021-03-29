@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxQRCodeModule } from 'ngx-qrcode2';
 
 @Component({
   selector: 'app-qr',
@@ -7,7 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QrComponent implements OnInit {
 
-  constructor() { }
+  public qrCodeVal: string = null;
+  public Nombre: string = null;
+  public Apellido: string = null;
+
+  getNombre(nombre){
+      this.Nombre = nombre;
+      this.qrCodeVal = "Nombre: " + this.Nombre + " " + "Apellido: "+  this.Apellido;
+  }
+
+  getApellido(apellido){
+    this.Apellido = apellido;
+    this.qrCodeVal = "Nombre: " + this.Nombre + " " + "Apellido: "+  this.Apellido;
+  }
+  
+
+  constructor() { 
+ 
+  }
 
   ngOnInit(): void {
   }

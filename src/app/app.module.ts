@@ -13,6 +13,7 @@ import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { LoginComponent } from './components/login/login.component';
 import { PropietariosComponent } from './components/propietarios/propietarios.component';
 import { ActivosComponent } from './components/activos/activos.component';
+import { QRCodeModule } from 'angular2-qrcode';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import { ActivosComponent } from './components/activos/activos.component';
   ],
   imports: [
     BrowserModule,
-    App_routing
+    App_routing,
+    QRCodeModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
