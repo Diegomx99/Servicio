@@ -12,11 +12,15 @@
         <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" (keyup)="getNombre($event.target.value)">
     </div>
 
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" >Ubicación</span>
+    <div class="row input-group mb-3">
+        <div class="col input-group-prepend">
+          <span class="input-group-text" >Edificio</span>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" (keyup)="getEdificio($event.target.value)">
         </div>
-        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" (keyup)="getUbicacion($event.target.value)">
+        <div class="col input-group-prepend">
+            <span class="input-group-text" >Salón</span>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" (keyup)="getSalon($event.target.value)">
+          </div>
     </div>
 
     <div class="input-group mb-3">
