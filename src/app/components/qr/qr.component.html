@@ -5,25 +5,33 @@
   </div>
 
 <form>
-    <div class="form-group">
-        <label for="exampleFormControlInput1">Nombre</label>
-        <input type="text" placeholder="Nombre" (keyup)="getNombre($event.target.value)">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Activo</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" (keyup)="getNombre($event.target.value)">
     </div>
-    <div class="form-group">
-        <label for="exampleFormControlInput1">Apellido</label>
-        <input type="text" placeholder="Apellido" (keyup)="getApellido($event.target.value)">
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" >Ubicación</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" (keyup)="getUbicacion($event.target.value)">
     </div>
-    <div class="form-group">
-        <label for="exampleFormControlSelect1">Selecione Activo</label>
-        <select class="form-control" >
-          <option value="">Seleccione una opción</option>
-          <option>Silla</option>
-          <option>Mesa</option>
-          <option>Computadora</option>
-          <option>Teclado</option>
-          <option>Proyector</option>
-        </select>
-      </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" >Cantidad</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" (keyup)="getCantidad($event.target.value)">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" >Propietario</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" (keyup)="getPropietario($event.target.value)">
+    </div>
 </form>
 
 <div class="container main-container">

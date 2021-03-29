@@ -10,16 +10,28 @@ export class QrComponent implements OnInit {
 
   public qrCodeVal: string = null;
   public Nombre: string = null;
-  public Apellido: string = null;
+  public Ubicacion: string = null;
+  public Cantidad: string = null;
+  public Propietario: string = null;
 
   getNombre(nombre){
       this.Nombre = nombre;
-      this.qrCodeVal = "Nombre: " + this.Nombre + " " + "Apellido: "+  this.Apellido;
+      this.qrCodeVal = "Activo: " + this.Nombre + " " + "Apellido: "+  this.Ubicacion;
   }
 
-  getApellido(apellido){
-    this.Apellido = apellido;
-    this.qrCodeVal = "Nombre: " + this.Nombre + " " + "Apellido: "+  this.Apellido;
+  getUbicacion(ubicacion){
+    this.Ubicacion = ubicacion;
+    this.qrCodeVal = "Nombre: " + this.Nombre + " " + "Ubicacion: "+  this.Ubicacion;
+  }
+  
+  getCantidad(cantidad){
+    this.Cantidad = cantidad;
+    this.qrCodeVal = "Nombre: " + this.Nombre + " " + "Ubicacion: "+  this.Ubicacion + " " + "Cantidad: " + this.Cantidad;
+  }
+
+  getPropietario(propietario){
+    this.Propietario = propietario;
+    this.qrCodeVal = "Nombre: " + this.Nombre + " " + "Ubicacion: "+  this.Ubicacion + " " + "Cantidad: " + this.Cantidad + " " + "Propietario: " + this.Propietario;
   }
   
 
