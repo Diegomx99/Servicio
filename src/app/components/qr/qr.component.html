@@ -1,6 +1,6 @@
 <div class="jumbotron jumbotron-fluid animated fadeIn fast">
     <div class="container">
-      <h1 class="display-3">Generador de QR</h1>
+      <h1 class="display-3" style="text-align: center;">Generador de QR</h1>
     </div>
   </div>
 
@@ -32,8 +32,13 @@
         </div>
         <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" (keyup)="getPropietario($event.target.value)">
     </div>
-</form>
 
-<div class="container main-container">
-  <qr-code [value]="qrCodeVal" [size]="300" ></qr-code>
-</div>
+    <button type="button" class="btn btn-primary btn-lg btn-block" >Guardar</button>
+    <button type="button" class="btn btn-secondary btn-lg btn-block" (click)="saveAsImage()">Descargar</button>
+    <button type="reset" class="btn btn-danger btn-lg btn-block" (click)="clickRestablecer()">Restablecer</button>
+
+    <br>
+    <qr-code id="QR" [value]="qrCodeVal" [size]="300" [canvas]="true" [level]="'M'" ></qr-code>
+</form>
+  
+
