@@ -14,7 +14,19 @@ import { LoginComponent } from './components/login/login.component';
 import { PropietariosComponent } from './components/propietarios/propietarios.component';
 import { ActivosComponent } from './components/activos/activos.component';
 import { QRCodeModule } from 'angular2-qrcode';
+import { GestorComponent } from './components/gestor/gestor.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
+import { MatNativeDateModule } from '@angular/material/core';
+import { HttpClientModule } from '@angular/common/http';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,13 +36,25 @@ import { QRCodeModule } from 'angular2-qrcode';
     UsuariosComponent,
     LoginComponent,
     PropietariosComponent,
-    ActivosComponent
+    ActivosComponent,
+    GestorComponent
   ],
   imports: [
     BrowserModule,
     App_routing,
-    QRCodeModule
-
+    QRCodeModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatSelectModule,
+    MatNativeDateModule,
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

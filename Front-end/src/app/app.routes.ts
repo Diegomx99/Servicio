@@ -5,6 +5,7 @@ import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { LoginComponent } from './components/login/login.component';
 import { PropietariosComponent } from './components/propietarios/propietarios.component';
 import { ActivosComponent } from './components/activos/activos.component';
+import { GestorComponent } from './components/gestor/gestor.component';
 
 
 const app_routes : Routes =[
@@ -14,6 +15,7 @@ const app_routes : Routes =[
     { path:'login',component: LoginComponent},
     { path:'propietarios',component: PropietariosComponent},
     { path:'activos',component: ActivosComponent},
+    { path:'gestor',component: GestorComponent},
     { path:'**', pathMatch: 'full', redirectTo:'inicio'}
 ]
 
